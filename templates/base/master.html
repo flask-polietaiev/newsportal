@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsPortal - {% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<body>
+    <header>
+        <h1> News Portal </h1>
+    </header>
+    <hr>
+    <nav>
+        <div class="row">
+            <div class="col-md-8 left">
+        |
+        <a href="">Главная</a>
+        |
+        <a href="">Новости</a>
+        |
+        <a href="">Про сайт</a>
+        |
+        <a href="/home/contact">Контакты</a>
+        |
+            </div>
+        <div class="col-md-4 right">
+
+        <a href="">Вход</a>
+        |
+        <a href="/users/login">Регистрация</a>
+        |
+            </div>
+        </div>
+
+
+
+
+    </nav>
+    <hr>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <hr>
+    <footer>
+        <h4>Copyright: MyCompane - Kyiv, 2021</h4>
+    </footer>
+
+</body>
+</html>
