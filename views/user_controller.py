@@ -27,4 +27,5 @@ class UserController(object):
     @staticmethod
     @app.route('/users/register')
     def register():
+        # получение данных
         return render_template('users/register.html')
